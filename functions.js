@@ -37,19 +37,3 @@ function findLabradoodles(breed)  {
 
   return filteredDogs;
 }
-
-function testAll() {
-  const results = [];
-  results.push(
-    reverseString('idempotent'),
-    findLabradoodles('labradoodle'),
-  );
-
-  results.forEach(result => {
-    const domList = document.getElementById('results');
-    const liElement = document.createElement('li');
-    resultTextNode = document.createTextNode(result);
-    liElement.appendChild(resultTextNode);
-    domList.appendChild(liElement);
-  })
-}
